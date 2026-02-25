@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { MagneticButton } from './MagneticButton';
+import { SplineBackground } from './SplineBackground';
 
 export const Hero = () => {
     const containerRef = useRef(null);
@@ -47,22 +48,19 @@ export const Hero = () => {
             ref={containerRef}
             className="relative h-[100dvh] w-full flex flex-col justify-end px-6 md:px-12 lg:px-24 pb-24 overflow-hidden"
         >
-            {/* Background Image / Pattern */}
-            <div className="absolute inset-0 z-0">
-                <div
-                    className="hero-bg absolute inset-0 bg-cover bg-center brightness-[0.7] transform scale-110"
-                    style={{
-                        backgroundImage: "url('https://images.unsplash.com/photo-1620121692029-d088224ddc74?q=80&w=2832&auto=format&fit=crop')",
-                        backgroundPosition: '50% 30%'
-                    }}
-                />
+            {/* Background Image / Pattern OR Spline 3D */}
+            <SplineBackground
+                sceneUrl="https://prod.spline.design/a0bPlc3V5JPGWEea/scene.splinecode"
+                fallbackImageUrl="https://images.unsplash.com/photo-1620121692029-d088224ddc74?q=80&w=2832&auto=format&fit=crop"
+                className="absolute inset-0 z-0 bg-cover bg-center"
+            >
                 {/* Soft abstract blue glow source */}
                 <div className="hero-glow absolute bottom-0 left-1/4 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px] mix-blend-screen pointer-events-none" />
 
                 {/* Gradient overlays to text area */}
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
-                <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-transparent to-transparent" />
-            </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-transparent to-transparent pointer-events-none" />
+            </SplineBackground>
 
             <div className="relative z-10 max-w-5xl">
                 <div className="hero-element inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary font-mono text-xs font-semibold tracking-wider uppercase mb-8 backdrop-blur-md">
