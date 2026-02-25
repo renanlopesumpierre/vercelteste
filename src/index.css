@@ -2,6 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Fabio XM';
+  src: url('./assets/fonts/FabioXM-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fabio XM';
+  src: url('./assets/fonts/FabioXM-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fabio XM';
+  src: url('./assets/fonts/FabioXM-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fabio XM';
+  src: url('./assets/fonts/FabioXM-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fabio XM';
+  src: url('./assets/fonts/FabioXM-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fabio XM';
+  src: url('./assets/fonts/FabioXM-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
 @layer base {
   body {
     @apply bg-background text-text font-sans antialiased overflow-x-hidden;
@@ -10,9 +52,10 @@
 
 @layer utilities {
   .text-glow {
-    text-shadow: 0 0 20px rgba(59, 130, 246, 0.4); /* primary color glow */
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+    /* primary color glow */
   }
-  
+
   .glass-panel {
     @apply bg-background/60 backdrop-blur-xl border border-slate/50;
   }

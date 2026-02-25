@@ -14,7 +14,7 @@ export default {
         slate: '#2A2A35',    // Borders/gridlines
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['"Fabio XM"', 'Inter', 'sans-serif'],
         drama: ['Playfair Display', 'serif'],
         mono: ['JetBrains Mono', 'monospace'],
       },
