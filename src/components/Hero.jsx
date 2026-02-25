@@ -50,7 +50,7 @@ export const Hero = () => {
         >
             {/* Background Image / Pattern OR Spline 3D */}
             <SplineBackground
-                sceneUrl="https://prod.spline.design/a0bPlc3V5JPGWEea/scene.splinecode"
+                sceneUrl="https://prod.spline.design/c06ozcenR9pt91-5/scene.splinecode"
                 fallbackImageUrl="https://images.unsplash.com/photo-1620121692029-d088224ddc74?q=80&w=2832&auto=format&fit=crop"
                 className="absolute inset-0 z-0 bg-cover bg-center"
             >
