@@ -11,6 +11,7 @@ import { Philosophy } from './components/Philosophy';
 import { Protocol } from './components/Protocol';
 import { Footer } from './components/Footer';
 import { AuroraBackground } from './components/ui/aurora-background';
+import { motion } from 'framer-motion';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -32,27 +33,34 @@ function App() {
     <div ref={containerRef} className="min-h-screen w-full font-sans antialiased text-text bg-background overflow-x-hidden selection:bg-primary/30">
       <Navbar />
 
-      <AuroraBackground className="!fixed inset-0 !z-0 h-screen w-screen !bg-background !transition-none mix-blend-screen" showRadialGradient={true}>
-        {/* The Aurora effect stays in background */}
-      </AuroraBackground>
-
       <main className="relative z-10 w-full min-h-screen">
         <Hero />
 
         {/* Features Section Container */}
-        <section id="features" className="relative w-full py-24 px-6 md:px-12 max-w-7xl mx-auto">
-          <div className="flex justify-center items-center mb-16 relative z-10">
-            <div className="font-mono text-sm tracking-widest text-primary/80 uppercase">
-              Artefatos Funcionais
-            </div>
-          </div>
+        <AuroraBackground
+          className="relative w-full py-24 flex-col gap-0 items-center justify-start h-auto !bg-transparent"
+          showRadialGradient={true}
+        >
+          <section id="features" className="relative w-full px-6 md:px-12 max-w-7xl mx-auto z-10">
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="flex justify-center items-center mb-16 relative z-10"
+            >
+              <div className="font-mono text-sm tracking-widest text-primary/80 uppercase">
+                Artefatos Funcionais
+              </div>
+            </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <DiagnosticShuffler />
-            <TelemetryTypewriter />
-            <CursorProtocolScheduler />
-          </div>
-        </section>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <DiagnosticShuffler />
+              <TelemetryTypewriter />
+              <CursorProtocolScheduler />
+            </div>
+          </section>
+        </AuroraBackground>
 
         <Philosophy />
 

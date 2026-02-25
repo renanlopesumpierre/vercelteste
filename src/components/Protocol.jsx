@@ -52,6 +52,9 @@ const protocols = [
     }
 ];
 
+import { motion } from 'framer-motion';
+import { Waves } from './ui/wave-background';
+
 export const Protocol = () => {
     const containerRef = useRef(null);
 
@@ -91,29 +94,47 @@ export const Protocol = () => {
     }, []);
 
     return (
-        <section id="protocol" ref={containerRef} className="relative w-full bg-background pt-24 pb-48">
+        <section id="protocol" ref={containerRef} className="relative w-full bg-background pt-24 pb-48 overflow-hidden">
+            {/* Embedded Waves Background */}
+            <div className="absolute inset-0 z-0">
+                <Waves
+                    strokeColor="rgba(59, 130, 246, 0.4)"
+                    backgroundColor="transparent"
+                    pointerSize={0.5}
+                />
+                {/* Gradient fade to seamlessly blend with adjacent sections */}
+                <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-background to-transparent pointer-events-none z-10" />
+                <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background to-transparent pointer-events-none z-10" />
+            </div>
+
             {/* Section header */}
-            <div className="max-w-5xl mx-auto px-6 mb-24 relative z-10">
+            <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                className="max-w-5xl mx-auto px-6 mb-24 relative z-10"
+            >
                 <div className="font-mono text-sm tracking-widest text-primary mb-4 uppercase">
                     Lógica do Sistema
                 </div>
                 <h2 className="text-4xl md:text-6xl font-sans font-bold text-text">
                     Protocolo Principal
                 </h2>
-            </div>
+            </motion.div>
 
-            <div className="max-w-4xl mx-auto px-6 relative">
+            <div className="max-w-4xl mx-auto px-6 relative z-10">
                 {protocols.map((proto, index) => (
                     <div
                         key={index}
                         className="protocol-card min-h-[60vh] w-full flex items-center justify-center mb-12"
                         style={{ zIndex: index }}
                     >
-                        <div className="w-full glass-panel border border-slate/40 rounded-[3rem] p-10 md:p-16 flex flex-col md:flex-row items-center gap-12 md:gap-24 shadow-2xl relative overflow-hidden bg-background">
+                        <div className="w-full glass-panel border border-primary/20 rounded-[3rem] p-10 md:p-16 flex flex-col md:flex-row items-center gap-12 md:gap-24 shadow-2xl relative overflow-hidden bg-background/80 backdrop-blur-xl">
 
                             {/* Content */}
                             <div className="flex-1 z-10">
-                                <div className="font-mono text-5xl font-light text-primary/30 mb-6 font-mono">{proto.step}</div>
+                                <div className="font-mono text-5xl font-light text-primary/30 mb-6">{proto.step}</div>
                                 <h3 className="text-3xl md:text-4xl font-sans font-bold text-text mb-4 mt-2">
                                     {proto.title}
                                 </h3>
