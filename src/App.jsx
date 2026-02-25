@@ -12,11 +12,24 @@ import { Protocol } from './components/Protocol';
 import { Footer } from './components/Footer';
 import { AuroraBackground } from './components/ui/aurora-background';
 import { motion } from 'framer-motion';
+import { HeroAlternative } from './components/HeroAlternative';
 
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   const containerRef = useRef(null);
+
+  // Rota simples de teste sem react-router-dom
+  if (typeof window !== 'undefined' && window.location.pathname === '/test') {
+    return (
+      <div className="min-h-screen w-full font-sans antialiased text-text bg-background overflow-x-hidden">
+        <Navbar />
+        <main className="relative z-10 w-full min-h-screen">
+          <HeroAlternative />
+        </main>
+      </div>
+    );
+  }
 
   useEffect(() => {
     // Add lenis smooth scrolling if performance allows, 
