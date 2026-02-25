@@ -35,16 +35,16 @@ export const CursorProtocolScheduler = () => {
             </div>
 
             <div className="mb-8 relative z-10">
-                <div className="font-mono text-xs text-primary mb-2 tracking-wider uppercase">Feature 03</div>
-                <h3 className="text-2xl font-sans font-bold text-text mb-2">Fail-Safe Execution</h3>
+                <div className="font-mono text-xs text-primary mb-2 tracking-wider uppercase">Recurso 03</div>
+                <h3 className="text-2xl font-sans font-bold text-text mb-2">Execução à Prova de Falhas</h3>
                 <p className="text-text/60 text-sm leading-relaxed max-w-[240px]">
-                    Error recovery, consistency protocols, and token-efficient workflows.
+                    Recuperação de erros, protocolos de consistência e fluxos eficientes em tokens.
                 </p>
             </div>
 
             <div className="flex-1 mt-4 relative bg-[#0a0a0f] rounded-xl border border-slate p-6">
                 <div className="flex justify-between mb-4">
-                    <div className="font-mono text-xs text-text/80">Protocol Timeline</div>
+                    <div className="font-mono text-xs text-text/80">Cronograma do Protocolo</div>
                     <div className="font-mono text-xs text-primary">v2.4.1</div>
                 </div>
 
@@ -61,7 +61,7 @@ export const CursorProtocolScheduler = () => {
 
                 <div className="flex justify-end relative z-10">
                     <button className="save-btn px-4 py-1.5 rounded bg-transparent border border-primary/30 text-text/60 text-[10px] font-mono transition-all">
-                        EXECUTE FLOW
+                        EXECUTAR FLUXO
                     </button>
                 </div>
 

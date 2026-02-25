@@ -38,7 +38,7 @@ function App() {
         <section id="features" className="relative w-full py-24 px-6 md:px-12 max-w-7xl mx-auto">
           <div className="flex justify-center items-center mb-16 relative z-10">
             <div className="font-mono text-sm tracking-widest text-primary/80 uppercase">
-              Functional Artifacts
+              Artefatos Funcionais
             </div>
           </div>
 

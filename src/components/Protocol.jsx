@@ -7,8 +7,8 @@ gsap.registerPlugin(ScrollTrigger);
 const protocols = [
     {
         step: "01",
-        title: "Structural Intent",
-        desc: "Define the underlying architecture before code generation. No hallucination, just logic.",
+        title: "Intenção Estrutural",
+        desc: "Defina a arquitetura subjacente antes da geração de código. Sem alucinações, apenas lógica.",
         Visual: () => (
             <svg viewBox="0 0 100 100" className="w-full h-full border border-primary/20 rounded-full animate-spin-slow">
                 <circle cx="50" cy="50" r="40" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="4 8" className="text-primary/60" />
@@ -19,8 +19,8 @@ const protocols = [
     },
     {
         step: "02",
-        title: "Parallel Execution",
-        desc: "Orchestrate multiple agents concurrently across isolated execution contexts.",
+        title: "Execução Paralela",
+        desc: "Orquestre múltiplos agentes simultaneamente em contextos de execução isolados.",
         Visual: () => (
             <div className="relative w-full h-full overflow-hidden border border-primary/20 rounded-xl bg-[#0a0a0f]">
                 <div className="absolute inset-0 grid grid-cols-4 grid-rows-4 gap-1 p-2">
@@ -35,8 +35,8 @@ const protocols = [
     },
     {
         step: "03",
-        title: "Continuous Validation",
-        desc: "Real-time state verification ensures every module aligns with systemic constraints.",
+        title: "Validação Contínua",
+        desc: "Verificação de estado em tempo real garante que cada módulo se alinhe às restrições sistêmicas.",
         Visual: () => (
             <svg viewBox="0 0 200 100" className="w-full h-full stroke-primary fill-none stroke-2">
                 <path
@@ -95,10 +95,10 @@ export const Protocol = () => {
             {/* Section header */}
             <div className="max-w-5xl mx-auto px-6 mb-24 relative z-10">
                 <div className="font-mono text-sm tracking-widest text-primary mb-4 uppercase">
-                    System Logic
+                    Lógica do Sistema
                 </div>
                 <h2 className="text-4xl md:text-6xl font-sans font-bold text-text">
-                    Core Protocol
+                    Protocolo Principal
                 </h2>
             </div>
 

@@ -71,16 +71,16 @@ export const Philosophy = () => {
             <div className="philo-content relative z-10 max-w-6xl w-full px-6 flex flex-col items-center text-center">
                 <div className="philo-text mb-12 max-w-2xl">
                     <p className="font-sans text-xl md:text-2xl text-text/50 font-medium tracking-wide">
-                        Most AI platforms focus on: prompt soup.
+                        A maioria das plataformas de IA foca em: sopa de prompts.
                     </p>
                 </div>
 
                 <div className="philo-text flex flex-col items-center">
                     <p className="font-sans text-2xl md:text-3xl font-bold text-text mb-4">
-                        We focus on:
+                        Nós focamos em:
                     </p>
                     <h2 className="philo-accent font-drama italic text-5xl md:text-7xl lg:text-9xl text-primary text-glow leading-[1.1]">
-                        executable system structure.
+                        estrutura de sistema executável.
                     </h2>
                 </div>
             </div>

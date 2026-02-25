@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
 const MESSAGES = [
-    "Initializing unified control layer...",
-    "Loading GPT-4 context window...",
-    "Syncing Claude 3 Opus memory...",
-    "Running parallel orchestration...",
-    "Resolving cross-model task dependencies...",
-    "Executing workflow...",
-    "Task complete. Latency: 240ms."
+    "Inicializando camada de controle unificada...",
+    "Carregando janela de contexto do GPT-4...",
+    "Sincronizando memória do Claude 3 Opus...",
+    "Executando orquestração paralela...",
+    "Resolvendo dependências de tarefas entre modelos...",
+    "Executando fluxo de trabalho...",
+    "Tarefa concluída. Latência: 240ms."
 ];
 
 export const TelemetryTypewriter = () => {
@@ -46,15 +46,15 @@ export const TelemetryTypewriter = () => {
 
             <div className="mb-8 relative z-10">
                 <div className="flex items-center justify-between mb-2">
-                    <div className="font-mono text-xs text-primary mb-2 tracking-wider uppercase">Feature 02</div>
+                    <div className="font-mono text-xs text-primary mb-2 tracking-wider uppercase">Recurso 02</div>
                     <div className="flex items-center gap-2 font-mono text-[10px] text-primary/70 bg-primary/10 px-2 py-1 rounded-sm border border-primary/20">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-                        LIVE FEED
+                        FEED AO VIVO
                     </div>
                 </div>
-                <h3 className="text-2xl font-sans font-bold text-text mb-2">Multi-LLM Orchestration</h3>
+                <h3 className="text-2xl font-sans font-bold text-text mb-2">Orquestração Multi-LLM</h3>
                 <p className="text-text/60 text-sm leading-relaxed max-w-[240px]">
-                    Run parallel tasks across models with one unified control layer.
+                    Execute tarefas paralelas em múltiplos modelos com uma camada de controle unificada.
                 </p>
             </div>
 

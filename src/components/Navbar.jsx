@@ -28,8 +28,8 @@ export const Navbar = () => {
             <nav
                 ref={navRef}
                 className={`flex items-center justify-between px-6 py-3 rounded-full transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] w-full max-w-5xl ${isScrolled
-                        ? 'glass-panel shadow-lg shadow-black/20 translate-y-0'
-                        : 'bg-transparent border-transparent translate-y-2'
+                    ? 'glass-panel shadow-lg shadow-black/20 translate-y-0'
+                    : 'bg-transparent border-transparent translate-y-2'
                     }`}
             >
                 <div className="flex items-center gap-3">
@@ -40,14 +40,14 @@ export const Navbar = () => {
                 </div>
 
                 <div className="hidden md:flex items-center gap-8 font-sans text-sm font-medium text-text/80">
-                    <a href="#features" className="hover:text-primary transition-colors">Architecture</a>
-                    <a href="#philosophy" className="hover:text-primary transition-colors">Philosophy</a>
-                    <a href="#protocol" className="hover:text-primary transition-colors">Protocol</a>
+                    <a href="#features" className="hover:text-primary transition-colors">Arquitetura</a>
+                    <a href="#philosophy" className="hover:text-primary transition-colors">Filosofia</a>
+                    <a href="#protocol" className="hover:text-primary transition-colors">Protocolo</a>
                 </div>
 
                 <div className="flex items-center gap-4">
                     <a href="#login" className="hidden md:block text-sm font-medium text-text/80 hover:text-white transition-colors">
-                        Sign In
+                        Entrar
                     </a>
                     <MagneticButton href="#request-access">
                         Solicitar acesso

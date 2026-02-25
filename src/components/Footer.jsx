@@ -19,8 +19,8 @@ export const Footer = () => {
                         </span>
                     </div>
                     <p className="font-sans text-text/60 leading-relaxed text-sm mb-8">
-                        A cognitive operating layer for builders who design and ship real AI systems.
-                        Turn intent into executable structure.
+                        Uma camada operacional cognitiva para criadores que projetam e entregam sistemas de IA reais.
+                        Transforme intenção em estrutura executável.
                     </p>
 
                     {/* System Status Indicator */}
@@ -30,7 +30,7 @@ export const Footer = () => {
                             <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.8)]"></span>
                         </span>
                         <span className="font-mono text-xs font-semibold text-green-500/90 tracking-widest uppercase">
-                            System Operational
+                            Sistema Operacional
                         </span>
                     </div>
                 </div>
@@ -38,21 +38,21 @@ export const Footer = () => {
                 {/* Links Grid */}
                 <div className="w-full md:w-auto grid grid-cols-2 gap-12 sm:gap-24 font-sans text-sm">
                     <div>
-                        <h4 className="text-text font-semibold mb-6 tracking-wide">Infrastructure</h4>
+                        <h4 className="text-text font-semibold mb-6 tracking-wide">Infraestrutura</h4>
                         <ul className="space-y-4 text-text/50">
-                            <li><a href="#" className="hover:text-primary transition-colors">CLI Agents</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Orchestration</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Integrations</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Changelog</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">Agentes de CLI</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">Orquestração</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">Integrações</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">Registro de Alterações</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h4 className="text-text font-semibold mb-6 tracking-wide">Company</h4>
+                        <h4 className="text-text font-semibold mb-6 tracking-wide">Empresa</h4>
                         <ul className="space-y-4 text-text/50">
-                            <li><a href="#" className="hover:text-primary transition-colors">Philosophy</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Careers</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Privacy</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Terms</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">Filosofia</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">Carreiras</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">Privacidade</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">Termos</a></li>
                         </ul>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ export const Footer = () => {
 
             {/* Bottom Legal */}
             <div className="max-w-6xl mx-auto mt-24 pt-8 border-t border-slate/50 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs text-text/40">
-                <p>© 2026 Neocortex Systems. All execution rights reserved.</p>
+                <p>© 2026 Neocortex Systems. Todos os direitos de execução reservados.</p>
                 <div className="flex gap-4">
                     <a href="#" className="hover:text-primary transition-colors">X (Twitter)</a>
                     <a href="#" className="hover:text-primary transition-colors">GitHub</a>

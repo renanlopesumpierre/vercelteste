@@ -7,9 +7,9 @@ gsap.registerPlugin(ScrollTrigger);
 export const DiagnosticShuffler = () => {
     const containerRef = useRef(null);
     const [cards, setCards] = useState([
-        { id: 1, label: 'System Topology', status: 'Optimal' },
-        { id: 2, label: 'Node Distribution', status: 'Balanced' },
-        { id: 3, label: 'Intent Parser', status: 'Active' },
+        { id: 1, label: 'Topologia do Sistema', status: 'Otimizado' },
+        { id: 2, label: 'Distribuição de Nós', status: 'Equilibrado' },
+        { id: 3, label: 'Interpretador de Intenção', status: 'Ativo' },
     ]);
 
     useEffect(() => {
@@ -34,10 +34,10 @@ export const DiagnosticShuffler = () => {
             </div>
 
             <div className="mb-8">
-                <div className="font-mono text-xs text-primary mb-2 tracking-wider uppercase">Feature 01</div>
-                <h3 className="text-2xl font-sans font-bold text-text mb-2">Architecture-First CLI</h3>
+                <div className="font-mono text-xs text-primary mb-2 tracking-wider uppercase">Recurso 01</div>
+                <h3 className="text-2xl font-sans font-bold text-text mb-2">CLI Focada em Arquitetura</h3>
                 <p className="text-text/60 text-sm leading-relaxed max-w-[240px]">
-                    Turn intent into executable system structure, not prompt soup.
+                    Transforme intenção em estrutura de sistema executável, não em sopa de prompts.
                 </p>
             </div>
 

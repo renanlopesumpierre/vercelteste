@@ -67,20 +67,20 @@ export const Hero = () => {
             <div className="relative z-10 max-w-5xl">
                 <div className="hero-element inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary font-mono text-xs font-semibold tracking-wider uppercase mb-8 backdrop-blur-md">
                     <span className="w-2 h-2 rounded-full bg-primary animate-pulse shadow-[0_0_8px_rgba(59,130,246,0.8)]" />
-                    System Active
+                    Sistema Ativo
                 </div>
 
                 <h1 className="flex flex-col mb-8 text-glow">
                     <span className="hero-element font-sans font-bold text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[1.1] text-text">
-                        Cognition meets
+                        Cognição encontra
                     </span>
                     <span className="hero-element font-drama italic text-7xl md:text-9xl lg:text-[180px] leading-[0.9] text-primary/95 pr-8 mt-2 md:-ml-4">
-                        Execution.
+                        Execução.
                     </span>
                 </h1>
 
                 <div className="hero-element max-w-xl text-lg md:text-xl font-sans text-text/70 leading-relaxed mb-10">
-                    NEOCORTEX is the unified cognitive operating layer for builders who design, orchestrate, and ship real AI systems without prompt soup.
+                    O NEOCORTEX é a camada operacional cognitiva unificada para criadores que projetam, orquestram e entregam sistemas de IA reais sem a bagunça de prompts.
                 </div>
 
                 <div className="hero-element flex flex-wrap items-center gap-6">
@@ -88,7 +88,7 @@ export const Hero = () => {
                         Solicitar acesso
                     </MagneticButton>
                     <a href="#architecture" className="font-mono text-sm tracking-widest text-text/50 hover:text-text transition-colors uppercase border-b border-text/20 pb-1 hover:border-text">
-                        View Architecture
+                        Ver Arquitetura
                     </a>
                 </div>
             </div>
