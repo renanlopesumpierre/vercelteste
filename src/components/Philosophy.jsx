@@ -55,35 +55,32 @@ export const Philosophy = () => {
         <section
             ref={sectionRef}
             id="philosophy"
-            className="relative min-h-[90dvh] w-full flex items-center justify-center py-32 overflow-hidden bg-background"
+            className="relative min-h-[70dvh] w-full flex items-center justify-center py-32 overflow-hidden bg-background"
         >
-            {/* Background Texture */}
-            <div className="absolute inset-0 z-0 opacity-20">
-                <div
-                    className="philo-bg absolute inset-[-10%] bg-cover bg-center mix-blend-screen"
-                    style={{
-                        backgroundImage: "url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2864&auto=format&fit=crop')"
-                    }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background" />
-            </div>
-
             <div className="philo-content relative z-10 max-w-6xl w-full px-6 flex flex-col items-center text-center">
-                <div className="philo-text mb-12 max-w-2xl">
-                    <p className="font-sans text-xl md:text-2xl text-text/50 font-medium tracking-wide">
-                        A maioria das plataformas de IA foca em: sopa de prompts.
+
+                {/* Reference Pill */}
+                <div className="philo-text inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/20 bg-primary/5 text-primary text-[10px] md:text-xs font-mono font-medium tracking-widest uppercase mb-12 shadow-[0_0_15px_rgba(59,130,246,0.1)]">
+                    <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-orange-500 to-primary animate-pulse" />
+                    Diferencial Arquitetural
+                </div>
+
+                {/* Main Headline */}
+                <h2 className="philo-accent w-full max-w-4xl font-sans font-bold text-4xl md:text-6xl lg:text-7xl xl:text-8xl text-text tracking-tight leading-[1.1] mb-10">
+                    Construa, direcione e expanda <span className="text-primary text-glow">sistemas executáveis.</span>
+                </h2>
+
+                {/* Sub-description */}
+                <div className="philo-text max-w-2xl">
+                    <p className="font-sans text-base md:text-lg lg:text-xl text-text/60 font-medium tracking-wide leading-relaxed">
+                        A maioria das plataformas foca em modelos. A Neocortex foca na orquestração: recupere o controle sobre a lógica, gargalos de dados e fluxos assíncronos da sua inteligência artificial.
                     </p>
                 </div>
 
-                <div className="philo-text flex flex-col items-center">
-                    <p className="font-sans text-2xl md:text-3xl font-bold text-text mb-4">
-                        Nós focamos em:
-                    </p>
-                    <h2 className="philo-accent font-drama italic text-5xl md:text-7xl lg:text-9xl text-primary text-glow leading-[1.1]">
-                        estrutura de sistema executável.
-                    </h2>
-                </div>
             </div>
+
+            {/* Background Texture - Lighter, abstract gradients if needed, mostly clean per reference */}
+            <div className="absolute inset-x-0 bottom-[-20%] h-[500px] w-full bg-primary/5 blur-[120px] rounded-full pointer-events-none" />
         </section>
     );
 };
