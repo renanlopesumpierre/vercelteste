@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-text font-sans antialiased overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.4); /* primary color glow */
+  }
+  
+  .glass-panel {
+    @apply bg-background/60 backdrop-blur-xl border border-slate/50;
+  }
+}
