@@ -87,6 +87,9 @@ export const SplineBackground = ({
                         opacity: splineLoaded ? 1 : 0,
                         transition: 'opacity 0.6s ease',
                         pointerEvents: 'auto', // MUST BE AUTO FOR SPLINE INTERACTION
+                        // TRICK: Usando uma máscara radial para apagar as bordas duras do fundo cinza que vem do Spline
+                        WebkitMaskImage: 'radial-gradient(circle at center, black 40%, transparent 70%)',
+                        maskImage: 'radial-gradient(circle at center, black 40%, transparent 70%)',
                     }} className="transform scale-75 md:scale-[0.60] w-[120%] md:w-[80%] lg:w-[60%] flex items-center justify-center">
                         <Spline
                             scene={sceneUrl}
