@@ -21,14 +21,7 @@ function App() {
 
   // Rota simples de teste sem react-router-dom
   if (typeof window !== 'undefined' && window.location.pathname === '/test') {
-    return (
-      <div className="min-h-screen w-full font-sans antialiased text-text bg-background overflow-x-hidden">
-        <Navbar />
-        <main className="relative z-10 w-full min-h-screen">
-          <HeroAlternative />
-        </main>
-      </div>
-    );
+    return <HeroAlternative />;
   }
 
   useEffect(() => {
