@@ -80,7 +80,7 @@ export const Philosophy = () => {
             </div>
 
             {/* Background Texture - Lighter, abstract gradients if needed, mostly clean per reference */}
-            <div className="absolute inset-x-0 bottom-[-20%] h-[500px] w-full bg-primary/5 blur-[120px] rounded-full pointer-events-none" />
+            <div className="absolute inset-x-0 bottom-[-20%] h-[500px] w-full bg-blue-500/10 blur-[120px] rounded-full pointer-events-none" />
         </section>
     );
 };

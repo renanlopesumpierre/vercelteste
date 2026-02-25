@@ -10,6 +10,7 @@ import { CursorProtocolScheduler } from './components/CursorProtocolScheduler';
 import { Philosophy } from './components/Philosophy';
 import { Protocol } from './components/Protocol';
 import { Footer } from './components/Footer';
+import { AuroraBackground } from './components/ui/aurora-background';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -31,7 +32,11 @@ function App() {
     <div ref={containerRef} className="min-h-screen w-full font-sans antialiased text-text bg-background overflow-x-hidden selection:bg-primary/30">
       <Navbar />
 
-      <main>
+      <AuroraBackground className="!fixed inset-0 !z-0 h-screen w-screen !bg-background !transition-none mix-blend-screen" showRadialGradient={true}>
+        {/* The Aurora effect stays in background */}
+      </AuroraBackground>
+
+      <main className="relative z-10 w-full min-h-screen">
         <Hero />
 
         {/* Features Section Container */}
@@ -54,7 +59,9 @@ function App() {
         <Protocol />
       </main>
 
-      <Footer />
+      <div className="relative z-10">
+        <Footer />
+      </div>
     </div>
   );
 }
