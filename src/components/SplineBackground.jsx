@@ -80,15 +80,14 @@ export const SplineBackground = ({
                     <div style={{
                         position: 'absolute',
                         top: 0,
-                        left: 0,
-                        width: '100%',
+                        right: 0,
                         height: '100%',
                         zIndex: 0,
                         // Fade in when ready
                         opacity: splineLoaded ? 1 : 0,
                         transition: 'opacity 0.6s ease',
                         pointerEvents: 'none',
-                    }} className="brightness-[0.7] transform scale-110">
+                    }} className="brightness-[0.7] transform scale-[1.15] w-full md:w-[80%] lg:w-[60%]">
                         <Spline
                             scene={sceneUrl}
                             onLoad={onLoad}
