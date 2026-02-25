@@ -52,14 +52,9 @@ export const Hero = () => {
             <SplineBackground
                 sceneUrl="https://prod.spline.design/c06ozcenR9pt91-5/scene.splinecode"
                 fallbackImageUrl="https://images.unsplash.com/photo-1620121692029-d088224ddc74?q=80&w=2832&auto=format&fit=crop"
-                className="absolute inset-0 z-0 bg-cover bg-center"
+                className="absolute inset-0 z-0 bg-[#0a0f1c]" // Adjusting base to a very dark blue/black to match
             >
-                {/* Soft abstract blue glow source */}
-                <div className="hero-glow absolute bottom-0 left-1/4 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px] mix-blend-screen pointer-events-none" />
-
-                {/* Gradient overlays to text area */}
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent pointer-events-none" />
-                <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-transparent to-transparent pointer-events-none" />
+                {/* Removed gradient overlays that were washing out the Spline model's natural colors and lights */}
             </SplineBackground>
 
             <div className="relative z-10 max-w-5xl">

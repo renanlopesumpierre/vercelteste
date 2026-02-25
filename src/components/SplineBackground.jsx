@@ -79,15 +79,15 @@ export const SplineBackground = ({
                 <Suspense fallback={null}>
                     <div style={{
                         position: 'absolute',
-                        top: 0,
-                        right: 0,
+                        top: '10%',
+                        right: '-5%',
                         height: '100%',
-                        zIndex: 0,
+                        zIndex: 10, // Bring to front for interaction
                         // Fade in when ready
                         opacity: splineLoaded ? 1 : 0,
                         transition: 'opacity 0.6s ease',
-                        pointerEvents: 'none',
-                    }} className="brightness-[0.7] transform scale-[1.15] w-full md:w-[80%] lg:w-[60%]">
+                        pointerEvents: 'auto', // MUST BE AUTO FOR SPLINE INTERACTION
+                    }} className="transform scale-75 md:scale-[0.60] w-[120%] md:w-[80%] lg:w-[60%] flex items-center justify-center">
                         <Spline
                             scene={sceneUrl}
                             onLoad={onLoad}
